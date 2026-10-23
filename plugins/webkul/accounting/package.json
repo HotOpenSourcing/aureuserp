@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "tailwindcss -i resources/css/index.css -o resources/dist/accounting.css --watch",
-    "build": "tailwindcss -i resources/css/index.css -o resources/dist/accounting.css --minify"
+    "dev": "node init && tailwindcss -i resources/css/index.css -o resources/dist/accounting.css --watch",
+    "build": "node init && tailwindcss -i resources/css/index.css -o resources/dist/accounting.css --minify"
   },
   "devDependencies": {
     "@awcodes/filament-plugin-purge": "^1.1.1",

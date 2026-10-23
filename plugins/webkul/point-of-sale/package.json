@@ -2,9 +2,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tailwindcss -i resources/css/index.css -o resources/dist/point-of-sale.css --watch",
-    "build:js": "esbuild resources/js/point-of-sale.js --bundle --minify --outfile=resources/dist/point-of-sale.js",
-    "build": "tailwindcss -i resources/css/index.css -o resources/dist/point-of-sale.css --minify && npm run build:js"
+    "dev": "node init && tailwindcss -i resources/css/index.css -o resources/dist/point-of-sale.css --watch",
+    "build:js": "node init && esbuild resources/js/point-of-sale.js --bundle --minify --outfile=resources/dist/point-of-sale.js",
+    "build": "node init && tailwindcss -i resources/css/index.css -o resources/dist/point-of-sale.css --minify && npm run build:js"
   },
   "devDependencies": {
     "@awcodes/filament-plugin-purge": "^1.1.1",

@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev:styles": "tailwindcss -i resources/css/index.css -o resources/dist/chatter.css --watch",
-    "build:styles": "tailwindcss -i resources/css/index.css -o resources/dist/chatter.css --minify",
-    "dev": "npm-run-all --parallel dev:*",
-    "build": "npm-run-all build:*"
+    "dev:styles": "node init && tailwindcss -i resources/css/index.css -o resources/dist/chatter.css --watch",
+    "build:styles": "node init && tailwindcss -i resources/css/index.css -o resources/dist/chatter.css --minify",
+    "dev": "node init && npm-run-all --parallel dev:*",
+    "build": "node init && npm-run-all build:*"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.12",
